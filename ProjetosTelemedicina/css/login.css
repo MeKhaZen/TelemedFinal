@@ -1,0 +1,115 @@
+body {
+    background: url('../images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: white; /* Forçar cor branca */
+    color: #007bff; /* Cor padrão do Bootstrap para o texto */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header .site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff; /* Cor padrão do Bootstrap */
+}
+
+.header .nav-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .nav-buttons a,
+.header .nav-buttons button {
+    color: white; /* Cor do texto branca */
+    background-color: #007bff; /* Cor padrão do Bootstrap */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-buttons a:hover,
+.header .nav-buttons button:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin-top: 4rem; /* Ajustar para compensar o cabeçalho fixo */
+    margin-bottom: 4rem; /* Ajustar para compensar o rodapé fixo */
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Forçar cor branca */
+    width: 100%;
+    max-width: 600px; /* Aumentar a largura máxima da caixa de login */
+}
+
+.card-header {
+    background-color: #007bff; /* Forçar cor branca */
+    color: white; /* Cor padrão do Bootstrap */
+    border-bottom: none;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Cor padrão do Bootstrap */
+    color: white; /* Cor do texto branca */
+    border: none;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+.form-control {
+    border-radius: 0.5rem;
+}
+
+.alert {
+    border-radius: 0.5rem;
+}
+
+.footer {
+    width: 100%;
+    background-color: white; /* Forçar cor branca */
+    color: #007bff; /* Cor padrão do Bootstrap */
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
